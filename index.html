@@ -16,7 +16,7 @@
     <!--파비콘-->
     <link rel="shortcut icon" href="img/favicon.ico">
 
-
+<!--제이쿼리-->
 <script src="js/jquery-3.7.1.js"></script>
 <script src="js/jquery.min_1.12.4.js"></script>
 <script src="js/slick.min.js"></script>
@@ -1317,12 +1317,12 @@
 
 
 <script type="text/javascript">
-    $.noConflict(); //제이쿼리 충돌방지코드
+   var $371 = $.noConflict(); //제이쿼리 충돌방지코드
 
        
     //무비차트 슬라이드
 $(function() {
-    $('.slider').slick({
+    $371('.slider').slick({
         dots: false,
         infinite: false,
         speed: 300,
