@@ -1360,7 +1360,7 @@ $(function() {
       });
 
       //자동 슬라이드
-      $('.slickAutoplay').slick({
+      $371('.slickAutoplay').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         autoplay: true,
@@ -1368,14 +1368,14 @@ $(function() {
       });                                            
 
    
-      $(function(){
+     $371(function(){
         //메뉴에 마우스를 올렸을 때 나오게 하기
-        var $menu = $('.nav');
-        var $navigation = $(".navigation");
+        var $menu = $371('.nav');
+        var $navigation = $371(".navigation");
 
         $menu.mouseenter(function(){
             $navigation.animate({height:'450px'},300 );
-            $(".sub_menu").css("display","block");
+            $371(".sub_menu").css("display","block");
         })
         .mouseleave(function(){
             $navigation.animate({height:'50px'},300);
@@ -1385,8 +1385,8 @@ $(function() {
     
   
       //영화 슬라이드 메뉴 무비차트 상영예정작
-      var movBtn =$(".movie_chart .movie_int i");  //슬라이드 메뉴
-      var movCon = $(".slider");
+      var movBtn =$371(".movie_chart .movie_int i");  //슬라이드 메뉴
+      var movCon = $371(".slider");
       movCon.hide().eq(0).show();
 
       movBtn.click(function(e) {
@@ -1400,14 +1400,14 @@ $(function() {
         movCon.css("display","none");//안보이게
   
         movCon.eq(index).css("display","block"); //보이게
-        $('.slider').slick('setPosition');//깨짐방지
+        $371('.slider').slick('setPosition');//깨짐방지
     });
 
     //상단 메뉴 고정
     var $navi = $(".navigation");
     //윈도우에 스크롤이 생기면 하게될 일
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 0) {
+   $371(window).scroll(function(){
+        if($371(this).scrollTop() > 0) {
             $navi.addClass('sticky');
         }else {
             $navi.removeClass('sticky'); 
@@ -1415,10 +1415,10 @@ $(function() {
     });
 
 
-    var $fix = $(".fix_button");
+    var $fix = $371(".fix_button");
     //윈도우에 스크롤이 생기면 하게될 일
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 0) {
+    $371(window).scroll(function(){
+        if($371(this).scrollTop() > 0) {
             $fix.addClass('sticky');
         }else {
             $fix.removeClass('sticky'); 
@@ -1427,15 +1427,15 @@ $(function() {
 
 
     //특별관 
-    var hall = $(".specialHall_list li");
-    var hall_img = $(".event_img .img");
+    var hall = $371(".specialHall_list li");
+    var hall_img = $371(".event_img .img");
   
     hall.hover(function(e){
         
         e.preventDefault();
         var target = e.target;
-        var index = $(target).closest('li').index();
-        $(target).closest('li').addClass('active').siblings('li').removeClass('active');
+        var index = $371(target).closest('li').index();
+        $371(target).closest('li').addClass('active').siblings('li').removeClass('active');
         hall_img.eq(index).addClass('active').siblings('img').removeClass('active');
 
 
