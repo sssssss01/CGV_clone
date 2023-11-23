@@ -1374,11 +1374,11 @@ $(function() {
         var $navigation = $371(".navigation");
 
         $menu.mouseenter(function(){
-            $navigation.animate({height:'450px'},300 );
+            $navigation.stop().animate({height:'450px'},300 );
             $371(".sub_menu").css("display","block");
         })
         .mouseleave(function(){
-            $navigation.animate({height:'50px'},300);
+            $navigation.stop().animate({height:'50px'},300);
         });
         
       });
