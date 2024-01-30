@@ -1405,25 +1405,18 @@ $(function() {
 
     //상단 메뉴 고정
     var $navi = $(".navigation");
+    var $fix = $371(".fix_button");
     //윈도우에 스크롤이 생기면 하게될 일
    $371(window).scroll(function(){
         if($371(this).scrollTop() > 0) {
             $navi.addClass('sticky');
-        }else {
-            $navi.removeClass('sticky'); 
-        }
-    });
-
-
-    var $fix = $371(".fix_button");
-    //윈도우에 스크롤이 생기면 하게될 일
-    $371(window).scroll(function(){
-        if($371(this).scrollTop() > 0) {
             $fix.addClass('sticky');
         }else {
+            $navi.removeClass('sticky'); 
             $fix.removeClass('sticky'); 
         }
     });
+
 
 
     //특별관 
