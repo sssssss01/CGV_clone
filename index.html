@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta name="keywords" content="CGV, 시지브이, 영화관, 극장, 영화, 티켓, 박스오피스, 극장, Movie, Theater, Cinema, Cgv, cgv, 예매, 상영작">
     <meta name="description" content="영화 그 이상의 다양하고 즐거운 몰입의 경험을 만듭니다. 라이프스타일 플랫폼 CGV">
     <meta property="og:site_name" content="영화 그 이상의 감동. CGV">
@@ -13,17 +13,19 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
 
     <script src="js/modernizr-custom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/index.js" type="text/javascript" ></script>
 
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/slick.css">
+
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <!--구글폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,139 +39,140 @@
     <div class="skip">
         <a href="#">메인 컨텐츠 바로가기</a>
     </div>
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="header">
-                        <h2>
-                            <a href="#">
-                                <img src="img/logoRed.png"> 
-                            </a>
-                            <span>CULTUREPLEX</span>
-                        </h2>
-
-                        <div class="memeberInfo">                          
-
-                            <ul class="member">
-                                <div class="add-partner">
-                                    <a href="#"><img src="img/16758461047540.png" alt="card"></a>
-                                </div><!--//add-partner-->
-                                
-                                <li><a href="#"><img src="img/loginPassword.png" alt="login"><span>로그인</span></a></li>
-                                <li><a href="#"><img src="img/loginJoin.png" alt="join"><span>회원가입</span></a></li> 
-                                <li><a href="#"><img src="img/loginMember.png" alt="mycgv"><span>MY CGV</span></a></li>
-                                <li><a href="#"><img src="img/loginCustomer.png" alt="customer"><span>고객센터</span></a></li>
-                            </ul><!--//member-->
-                        </div><!--//memeberInfo-->
-                    </div><!--//header-->
-                </div><!--//row-->
-            </div><!--//container-->
-
-            <div class="navigation">
-                <div class="container">
-                    <h1>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <h2>
                         <a href="#">
-                            <img src="img/logoWhite.png" alt="logo"><!--투명로고-->
+                            <img src="img/logoRed.png"> 
                         </a>
-                    </h1>
-                    <ul class="nav">
-                        <li>
-                            <h2><a href="#">영화</a></h2>
-                            <ul class="sub_menu"><!--영화-->
-                                <li class="title"><a href="#">영화</a></li>
-                                <li><a href="#">무비차트</a></li>
-                                <li><a href="#">아트하우스</a></li>
-                                <li><a href="#">ICECON</a></li>
-                            </ul>    
-                        </li>
-                        <li>
-                            <h2><a href="#">극장</a></h2> 
-                            <ul class="sub_menu"><!--극장-->
-                                <li class="title"><a href="#">극장</a></li>
-                                <li><a href="#">CGV극장</a></li>
-                                <li><a href="#">특별관</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                           <h2><a href="#">예매</a></h2> 
-                            <ul class="sub_menu"><!--예매-->
-                                <li class="title"><a href="#">예매</a></li>
-                                <li><a href="#">빠른예매</a></li>
-                                <li><a href="#">상영스케쥴</a></li>
-                                <li><a href="#">English Ticketing</a></li>
-                                <li><a href="#">English Schedule</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2><a href="#">스토어</a></h2>
-                            <ul class="sub_menu"><!--스토어-->
-                                <li class="title"><a href="#">스토어</a></li>
-                                <li><a href="#">패키지</a></li>
-                                <li><a href="#">영화관람권</a></li>
-                                <li><a href="#">기프트카드</a></li>
-                                <li><a href="#">콤보</a></li>
-                                <li><a href="#">팝곤</a></li>
-                                <li><a href="#">음료</a></li>
-                                <li><a href="#">스낵</a></li>
-                                <li><a href="#">플레이존</a></li>
-                                <li><a href="#" class="arrow">씨네샵</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2><a href="#">이벤트</a></h2>
-                            <ul class="sub_menu"><!--이벤트-->
-                                <li class="title"><a href="#">이벤트</a></li>
-                                <li><a href="#">SPECIAL</a></li>
-                                <li><a href="#">영화/예매</a></li>
-                                <li><a href="#">멤버십/CLUB</a></li>
-                                <li><a href="#">CGV 극장별</a></li>
-                                <li><a href="#">제휴할인</a></li>
-                                <li><a href="#">당첨자 발표</a></li>
-                                <li><a href="#">종료된 이벤트</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2><a href="#">혜택</a></h2>
-                            <ul class="sub_menu"><!--혜택-->
-                                <li class="title"><a href="#">혜택</a></li>
-                                <li><a href="#">CGV 할인정보</a></li>
-                                <li><a href="#">CLUB 서비스</a></li>
-                                <li><a href="#">VIP 라운지</a></li>
-                            </ul>
-                        </li>
-                    </ul><!--//nav-->
-                    
-                    <div class="search">
-                        <input type="text">
-                        <button type="button" class="search_btn">검색</button>
-                    </div>
-                    
-                     
-              </div> <!--//contents-->
-                    
-            </div><!--//navigation-->
-        </header>
+                        <span>CULTUREPLEX</span>
+                    </h2>
+
+                    <div class="memeberInfo">                          
+
+                        <ul class="member">
+                            <div class="add-partner">
+                                <a href="#"><img src="img/16758461047540.png" alt="card"></a>
+                            </div><!--//add-partner-->
+                            
+                            <li><a href="#"><img src="img/loginPassword.png" alt="login"><span>로그인</span></a></li>
+                            <li><a href="#"><img src="img/loginJoin.png" alt="join"><span>회원가입</span></a></li> 
+                            <li><a href="#"><img src="img/loginMember.png" alt="mycgv"><span>MY CGV</span></a></li>
+                            <li><a href="#"><img src="img/loginCustomer.png" alt="customer"><span>고객센터</span></a></li>
+                        </ul><!--//member-->
+                    </div><!--//memeberInfo-->
+                </div><!--//header-->
+            </div><!--//row-->
+        </div><!--//container-->
+
+        <div class="navigation">
+            <div class="container">
+                <h1>
+                    <a href="#">
+                        <img src="img/logoWhite.png" alt="logo"><!--투명로고-->
+                    </a>
+                </h1>
+                <ul class="nav">
+                    <li>
+                        <h2><a href="#">영화</a></h2>
+                        <ul class="sub_menu"><!--영화-->
+                            <li class="title"><a href="#">영화</a></li>
+                            <li><a href="#">무비차트</a></li>
+                            <li><a href="#">아트하우스</a></li>
+                            <li><a href="#">ICECON</a></li>
+                        </ul>    
+                    </li>
+                    <li>
+                        <h2><a href="#">극장</a></h2> 
+                        <ul class="sub_menu"><!--극장-->
+                            <li class="title"><a href="#">극장</a></li>
+                            <li><a href="#">CGV극장</a></li>
+                            <li><a href="#">특별관</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                       <h2><a href="#">예매</a></h2> 
+                        <ul class="sub_menu"><!--예매-->
+                            <li class="title"><a href="#">예매</a></li>
+                            <li><a href="#">빠른예매</a></li>
+                            <li><a href="#">상영스케쥴</a></li>
+                            <li><a href="#">English Ticketing</a></li>
+                            <li><a href="#">English Schedule</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="#">스토어</a></h2>
+                        <ul class="sub_menu"><!--스토어-->
+                            <li class="title"><a href="#">스토어</a></li>
+                            <li><a href="#">패키지</a></li>
+                            <li><a href="#">영화관람권</a></li>
+                            <li><a href="#">기프트카드</a></li>
+                            <li><a href="#">콤보</a></li>
+                            <li><a href="#">팝곤</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">스낵</a></li>
+                            <li><a href="#">플레이존</a></li>
+                            <li><a href="#" class="arrow">씨네샵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="#">이벤트</a></h2>
+                        <ul class="sub_menu"><!--이벤트-->
+                            <li class="title"><a href="#">이벤트</a></li>
+                            <li><a href="#">SPECIAL</a></li>
+                            <li><a href="#">영화/예매</a></li>
+                            <li><a href="#">멤버십/CLUB</a></li>
+                            <li><a href="#">CGV 극장별</a></li>
+                            <li><a href="#">제휴할인</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="#">혜택</a></h2>
+                        <ul class="sub_menu"><!--혜택-->
+                            <li class="title"><a href="#">혜택</a></li>
+                            <li><a href="#">CGV 할인정보</a></li>
+                            <li><a href="#">CLUB 서비스</a></li>
+                            <li><a href="#">VIP 라운지</a></li>
+                        </ul>
+                    </li>
+                </ul><!--//nav-->
+                
+                <div class="search">
+                    <input type="text">
+                    <button type="button" class="search_btn">검색</button>
+                </div>
+                
+                 
+          </div> <!--//contents-->
+                
+        </div><!--//navigation-->
+    </header>
       
-        <section id="section">
-            <div class="chart">
-                <div class="container">
+    <section id="section">
+        <div class="chart">
+            <div class="container">
 
-                    <div class="movie_chart">
-                        <div class="movie_int"><!--버튼-->
-                            <i class="active"><a href="#">무비차트</a></i>
-                            <i><a href="#">상영예정작</a></i>
-                        </div> 
-                        <a href="#" class="allView">전체보기</a>  
-                    </div><!--//movie_chart-->
+                <div class="movie_chart">
+                    <div class="movie_int"><!--버튼-->
+                        <i class="active"><a href="#">무비차트</a></i>
+                        <i><a href="#">상영예정작</a></i>
+                    </div> 
+                    <a href="#" class="allView">전체보기</a>  
+                </div><!--//movie_chart-->
 
-                    <div class="movie_list">
-                        <!-- 사진 이미지 슬라이드-->
-                     <!-- <div class="container">-->  
-                            <div class="slider img_slider1">
-                                
-                                <div> <!-- 1 -->
+                <div class="movie_list">
+                    <!-- 사진 이미지 슬라이드-->             
+                    <!-- Swiper -->
+                    <div class="slider">
+                        <div class="swiper img_slider1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><!-- 1 -->
                                     <div class="img_contents"><!--이미지-->
-                                        <img src="img/87433_320.jpg" alt="그대들은 어떻게 살것인가">
+                                        <img src="../img/87433_320.jpg" alt="그대들은 어떻게 살것인가">
                                         <div class="img_rank"> <!--영화등급-->
                                             <i class="icon ageAll">All</i><!--아이콘-->
                                             <i class="icon ageDay" data-value="D-1">D Day</i>
@@ -177,7 +180,7 @@
 
                                         <div class="screen_type"><!--스크린 타입-->
                                             <i class="sType">
-                                                <img src="img/imax_white.png" alt="imax">
+                                                <img src="../img/imax_white.png" alt="imax">
                                             </i>
                                         </div><!--//screen_type-->
 
@@ -190,259 +193,254 @@
                                     </div><!--//img_contents-->
                                     <div class="movie_info"><!--영화 설명-->
                                         <strong class="movieName">그대들은 어떻게 살것인가</strong>
-                                        <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">99%</span>
+                                        <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">99%</span>
                                         <span>예매율 59.2%</span>
                                     </div><!--//movie_info-->
-                                </div> <!--//1-->
-                                    
-                                <div> <!--//2-->
-                                        <div class="img_contents"><img src="img/87407_320.jpg" alt="30일">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age15">15</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-    
-                                            
-                                            
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-    
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">30일</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
-                                            <span>예매율 9.7%</span>
-                                        </div><!--//movie_info-->
+                                </div><!-- 1 -->
+
+                                <div class="swiper-slide"><!--2-->
+                                    <div class="img_contents"><img src="../img/87407_320.jpg" alt="30일">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age15">15</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">30일</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
+                                        <span>예매율 9.7%</span>
+                                    </div><!--//movie_info-->
 
                                 </div><!--//2-->
-                                                                        
-                                <div><!--3-->
-                                        <div class="img_contents">
-                                            <img src="img/87444_320.jpg" alt="플라워 킬링 문">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age19">19</i><!--아이콘-->
-                                            </div><!--//img_rank-->
+
+                                <div class="swiper-slide"><!--3-->
+                                    <div class="img_contents">
+                                        <img src="../img/87444_320.jpg" alt="플라워 킬링 문">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age19">19</i><!--아이콘-->
+                                        </div><!--//img_rank-->
     
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
     
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">플라워 킬링 문</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
+                                            <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
                                             <span>예매율 4.4%</span>
                                         </div><!--//movie_info-->
                                 </div><!--//3-->
 
-                                <div><!--4-->
+                                <div class="swiper-slide"><!--4-->
+                                    <div class="img_contents">
+                                        <img src="../img/87410_320.jpg" alt="용감한 시민">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age15">15</i><!--아이콘-->
+                                        </div><!--//img_rank-->
 
-                                        <div class="img_contents">
-                                            <img src="img/87410_320.jpg" alt="용감한 시민">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age15">15</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-    
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">용감한 시민</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="">93%</span>
-                                            <span>예매율 3.6%</span>
-                                        </div><!--//movie_info-->
-
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">용감한 시민</strong>
+                                        <span><img src="../img/eggGoldeneggPreegg.png" alt="">93%</span>
+                                        <span>예매율 3.6%</span>
+                                    </div><!--//movie_info-->
                                 </div><!--//4-->
-                                    
-                                <div><!--5-->
-                                        <div class="img_contents">
-                                            <img src="img/87422_320.jpg" alt="바람 따라 만나리 : 김호중의 계절">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon ageAll">All</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-    
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">바람 따라 만나리 : 김호중의 계절</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
-                                            <span>예매율 3.6%</span>
-                                        </div><!--//movie_info-->
+
+                                <div class="swiper-slide"><!--5-->
+                                    <div class="img_contents">
+                                        <img src="../img/87422_320.jpg" alt="바람 따라 만나리 : 김호중의 계절">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon ageAll">All</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">바람 따라 만나리 : 김호중의 계절</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
+                                        <span>예매율 3.6%</span>
+                                    </div><!--//movie_info-->
                                 </div><!--//5-->
 
-                                <div><!--6-->
-                                        <div class="img_contents">
-                                            <img src="img/87358_320.jpg" alt="익스펜더블 4">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age19">19</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">익스펜더블 4</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">85%</span>
-                                            <span>예매율 2.8%</span>
-                                        </div><!--//movie_info-->                                       
+                                <div class="swiper-slide"><!--6-->
+                                    <div class="img_contents">
+                                        <img src="../img/87358_320.jpg" alt="익스펜더블 4">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age19">19</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">익스펜더블 4</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">85%</span>
+                                        <span>예매율 2.8%</span>
+                                    </div><!--//movie_info-->    
                                 </div><!--//6-->
 
-                                <div><!--7-->
-                                        <div class="img_contents">
-                                            <img src="img/87438_320.jpg" alt="오픈 더 도어">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age19">19</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">오픈 더 도어</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">98%</span>
-                                            <span>예매율 2.0%</span>
-                                        </div><!--//movie_info-->     
+                                <div class="swiper-slide"><!--7-->
+                                    <div class="img_contents">
+                                        <img src="../img/87438_320.jpg" alt="오픈 더 도어">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age19">19</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">오픈 더 도어</strong>
+                                        <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">98%</span>
+                                        <span>예매율 2.0%</span>
+                                    </div><!--//movie_info-->     
                                 </div><!--//7-->
 
-                                <div><!--8-->
-                                        <div class="img_contents">
-                                            <img src="img/87298_320.jpg" alt="블루 자이언트">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">블루 자이언트</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">97%</span>
-                                            <span>예매율 1.8%</span>
-                                        </div><!--//movie_info-->     
-
+                                <div class="swiper-slide"><!--8-->
+                                    <div class="img_contents">
+                                        <img src="../img/87298_320.jpg" alt="블루 자이언트">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">블루 자이언트</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">97%</span>
+                                        <span>예매율 1.8%</span>
+                                    </div><!--//movie_info-->    
                                 </div><!--//8-->
 
-                                <div><!--9-->
-                                        <div class="img_contents">
-                                            <img src="img/87408_320.jpg" alt="화란">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age15">15</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">화란</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">79%</span>
-                                            <span>예매율 1.9%</span>
-                                        </div><!--//movie_info-->     
+                                <div class="swiper-slide"><!--9-->
+                                    <div class="img_contents">
+                                        <img src="../img/87408_320.jpg" alt="화란">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age15">15</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">화란</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">79%</span>
+                                        <span>예매율 1.9%</span>
+                                    </div><!--//movie_info-->    
                                 </div><!--//9-->
 
-                                <div><!--10-->
-                                        <div class="img_contents">
-                                            <img src="img/87428_320.jpg" alt="엑소시스트-믿는 자">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age15">15</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">엑소시스트-믿는 자</strong>
-                                            <span><img src="img/eggGoldenegg.png" alt="Golden Egg">65%</span>
-                                            <span>예매율 1.1%</span>
-                                        </div><!--//movie_info-->   
+                                <div class="swiper-slide"><!--10-->
+                                    <div class="img_contents">
+                                        <img src="../img/87428_320.jpg" alt="엑소시스트-믿는 자">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age15">15</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">엑소시스트-믿는 자</strong>
+                                        <span><img src="../img/eggGoldenegg.png" alt="Golden Egg">65%</span>
+                                        <span>예매율 1.1%</span>
+                                    </div><!--//movie_info-->   
                                 </div><!--//10-->
 
-                                <div><!--11-->
-                                        <div class="img_contents">
-                                            <img src="img/87263_320.jpg" alt="마브카-숲의 노래">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon ageAll">All</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">마브카-숲의 노래</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">94%</span>
-                                            <span>예매율 1.1%</span>
-                                        </div><!--//movie_info-->   
+                                <div class="swiper-slide"><!--11-->
+                                    <div class="img_contents">
+                                        <img src="../img/87263_320.jpg" alt="마브카-숲의 노래">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon ageAll">All</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">마브카-숲의 노래</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">94%</span>
+                                        <span>예매율 1.1%</span>
+                                    </div><!--//movie_info-->   
                                 </div><!--//11-->
 
-                                <div><!--12-->
-                                        <div class="img_contents">
-                                            <img src="img/87360_320.jpg" alt="퍼피 구조대-더 마이티 무비">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon ageAll">All</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">퍼피 구조대-더 마이티 무비</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">96%</span>
-                                            <span>예매율 0.9%</span>
-                                        </div><!--//movie_info-->   
+                                <div class="swiper-slide"><!--12-->
+                                    <div class="img_contents">
+                                        <img src="../img/87360_320.jpg" alt="퍼피 구조대-더 마이티 무비">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon ageAll">All</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">퍼피 구조대-더 마이티 무비</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">96%</span>
+                                        <span>예매율 0.9%</span>
+                                    </div><!--//movie_info-->   
                                 </div><!--//12-->
 
-                                <div><!--13-->
-                                        <div class="img_contents">
-                                            <img src="img/87305_320.jpg" alt="화사한 그녀">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">화사한 그녀</strong>
-                                            <span><img src="img/eggGoldenegg.png" alt="Golden Egg">68%</span>
-                                            <span>예매율 0.7%</span>
-                                        </div><!--//movie_info-->  
+                                <div class="swiper-slide"><!--13-->
+                                    <div class="img_contents">
+                                        <img src="../img/87305_320.jpg" alt="화사한 그녀">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">화사한 그녀</strong>
+                                        <span><img src="../img/eggGoldenegg.png" alt="Golden Egg">68%</span>
+                                        <span>예매율 0.7%</span>
+                                    </div><!--//movie_info-->  
                                 </div><!--//13-->
 
-                                <div><!--14-->
-                                        <div class="img_contents">
-                                            <img src="img/87355_320.jpg" alt="사나-저주의 아이">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age15">15</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">사나-저주의 아이</strong>
-                                            <span><img src="img/eggGoldenegg.png" alt="Golden Egg">62%</span>
-                                            <span>예매율 0.7%</span>
-                                        </div><!--//movie_info-->  
+                                <div class="swiper-slide"><!--14-->
+                                    <div class="img_contents">
+                                        <img src="../img/87355_320.jpg" alt="사나-저주의 아이">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age15">15</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">사나-저주의 아이</strong>
+                                        <span><img src="../img/eggGoldenegg.png" alt="Golden Egg">62%</span>
+                                        <span>예매율 0.7%</span>
+                                    </div><!--//movie_info-->  
                                 </div><!--//14-->
 
-                                <div><!--15-->
+                                <div class="swiper-slide"><!--15-->
                                     <div class="img_contents">
-                                        <img src="img/87405_320.jpg" alt="믿을 수 있는 사람">
+                                        <img src="../img/87405_320.jpg" alt="믿을 수 있는 사람">
                                         <div class="img_rank"> <!--영화등급-->
                                             <i class="icon age12">12</i><!--아이콘-->
                                         </div><!--//img_rank-->
@@ -453,14 +451,14 @@
                                     </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">믿을 수 있는 사람</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
+                                            <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">93%</span>
                                             <span>예매율 0.6%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//15-->
 
-                                <div><!--16-->
+                                <div class="swiper-slide"><!--16-->
                                     <div class="img_contents">
-                                        <img src="img/87500_320.jpg" alt="팀 버튼의 크리스마스 악몽">
+                                        <img src="../img/87500_320.jpg" alt="팀 버튼의 크리스마스 악몽">
                                         <div class="img_rank"> <!--영화등급-->
                                             <i class="icon ageAll">All</i><!--아이콘-->
                                         </div><!--//img_rank-->
@@ -471,90 +469,94 @@
                                     </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">팀 버튼의 크리스마스 악몽</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">97%</span>
+                                            <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">97%</span>
                                             <span>예매율 0.3%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//16-->
 
-                                <div><!--17-->
-                                        <div class="img_contents">
-                                            <img src="img/87335_320.jpg" alt="천박사 퇴마 연구소-설경의 비밀">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">천박사 퇴마 연구소-설경의 비밀</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">88%</span>
-                                            <span>예매율 0.2%</span>
-                                        </div><!--//movie_info-->  
-                                 </div><!--//17-->
+                                <div class="swiper-slide"><!--17-->
+                                    <div class="img_contents">
+                                        <img src="../img/87335_320.jpg" alt="천박사 퇴마 연구소-설경의 비밀">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">천박사 퇴마 연구소-설경의 비밀</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">88%</span>
+                                        <span>예매율 0.2%</span>
+                                    </div><!--//movie_info-->  
+                                </div><!--//17-->
 
-                                <div><!--18-->
-                                        <div class="img_contents">
-                                            <img src="img/85672_320.jpg" alt="라라랜드">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">라라랜드</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">99%</span>
-                                            <span>예매율 0.2%</span>
-                                        </div><!--//movie_info-->  
+                                <div class="swiper-slide"><!--18-->
+                                    <div class="img_contents">
+                                        <img src="../img/85672_320.jpg" alt="라라랜드">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">라라랜드</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">99%</span>
+                                        <span>예매율 0.2%</span>
+                                    </div><!--//movie_info-->  
                                 </div><!--//18-->
 
-                                <div> <!--19-->
-                                        <div class="img_contents">
-                                            <img src="img/87388_320.jpg" alt="1947 보스톤">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">1947 보스톤</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">96%</span>
-                                            <span>예매율 0.2%</span>
-                                        </div><!--//movie_info-->  
+                                <div class="swiper-slide"><!--19-->
+                                    <div class="img_contents">
+                                        <img src="../img/87388_320.jpg" alt="1947 보스톤">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">1947 보스톤</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">96%</span>
+                                        <span>예매율 0.2%</span>
+                                    </div><!--//movie_info-->  
                                 </div><!--//19-->
 
-                                <div><!--20-->
-                                        <div class="img_contents">
-                                            <img src="img/87440_320.jpg" alt="우리의 하루">
-                                            <div class="img_rank"> <!--영화등급-->
-                                                <i class="icon age12">12</i><!--아이콘-->
-                                            </div><!--//img_rank-->
-                                            <div class="movie_detail"> <!--영화 상세보기-->
-                                                <a href="#" class="chart_detail" >상세보기</a>
-                                                <a href="#" class="chart_ticket" >예매하기</a>
-                                            </div>
-                                        </div><!--//img_contents-->
-                                        <div class="movie_info"><!--영화 설명-->
-                                            <strong class="movieName">우리의 하루</strong>
-                                            <span><img src="img/eggGoldenegggreat.png" alt="Golden Egg">95%</span>
-                                            <span>예매율 0.2%</span>
-                                        </div><!--//movie_info-->  
+                                <div class="swiper-slide"><!--20-->
+                                    <div class="img_contents">
+                                        <img src="../img/87440_320.jpg" alt="우리의 하루">
+                                        <div class="img_rank"> <!--영화등급-->
+                                            <i class="icon age12">12</i><!--아이콘-->
+                                        </div><!--//img_rank-->
+                                        <div class="movie_detail"> <!--영화 상세보기-->
+                                            <a href="#" class="chart_detail" >상세보기</a>
+                                            <a href="#" class="chart_ticket" >예매하기</a>
+                                        </div>
+                                    </div><!--//img_contents-->
+                                    <div class="movie_info"><!--영화 설명-->
+                                        <strong class="movieName">우리의 하루</strong>
+                                        <span><img src="../img/eggGoldenegggreat.png" alt="Golden Egg">95%</span>
+                                        <span>예매율 0.2%</span>
+                                    </div><!--//movie_info-->  
                                 </div><!--//20-->
-                                
-                            </div><!--//slider img_slider1-->
-                            
-
-                            <div class="slider img_slider2">
-                                <div > <!-- 1 -->
+                            </div>                                                         
+                        </div><!--//swiper img_slider1-->
+                        <div class="img1 swiper-button-next"></div>
+                        <div class="img1 swiper-button-prev"></div>    
+                    </div><!--//slider-->
+                       
+                    <div class="slider">
+                        <div class="swiper img_slider2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <!-- 1 -->
                                     <div class="img_contents"><!--이미지-->
-                                        <img src="img/87411_320.jpg" alt="빌리와 용감한 녀석들-황금달걀 구조대">
+                                        <img src="../img/87411_320.jpg" alt="빌리와 용감한 녀석들-황금달걀 구조대">
                                         <div class="img_rank"> <!--영화등급-->
                                             <i class="icon ageAll">All</i><!--아이콘-->
                                             <i class="icon ageDay" data-value="D-1">D Day</i>
@@ -562,7 +564,7 @@
 
                                         <div class="screen_type"><!--스크린 타입-->
                                             <i class="sType">
-                                                <img src="img/imax_white.png" alt="imax">
+                                                <img src="../img/imax_white.png" alt="imax">
                                             </i>
                                         </div><!--//screen_type-->
 
@@ -575,14 +577,14 @@
                                     </div><!--//img_contents-->
                                     <div class="movie_info"><!--영화 설명-->
                                         <strong class="movieName">빌리와 용감한 녀석들-황금달걀 구조대</strong>
-                                        <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                        <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                         <span>예매율 1.0%</span>
                                     </div><!--//movie_info-->
                                 </div> <!--//1-->
                                     
-                                <div> <!--2-->
+                                <div class="swiper-slide"> <!--2-->
                                         <div class="img_contents">
-                                            <img src="img/87344_320.jpg" alt="[Whisky Master Class]나만의 위스키 취향">
+                                            <img src="../img/87344_320.jpg" alt="[Whisky Master Class]나만의 위스키 취향">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon ageAll">All</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -597,15 +599,15 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">[Whisky Master Class]나만의 위스키 취향</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->
 
                                 </div><!--//2-->                                       
                                 
-                                <div><!--3-->
+                                <div class="swiper-slide"><!--3-->
                                         <div class="img_contents">
-                                            <img src="img/87444_320.jpg" alt="플라워 킬링 문">
+                                            <img src="../img/87444_320.jpg" alt="플라워 킬링 문">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age19">19</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -618,14 +620,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">플라워 킬링 문</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->
-                                 </div><!--//3-->
+                                </div><!--//3-->
 
-                                <div><!--4-->
+                                <div class="swiper-slide"><!--4-->
                                         <div class="img_contents">
-                                            <img src="img/87410_320.jpg" alt="용감한 시민">
+                                            <img src="../img/87410_320.jpg" alt="용감한 시민">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age15">15</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -637,15 +639,15 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">용감한 시민</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->
 
                                 </div><!--//4-->
                                     
-                                <div><!--5-->
+                                <div class="swiper-slide"><!--5-->
                                         <div class="img_contents">
-                                            <img src="img/87422_320.jpg" alt="바람 따라 만나리:김호중의 계절">
+                                            <img src="../img/87422_320.jpg" alt="바람 따라 만나리:김호중의 계절">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon ageAll">All</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -657,14 +659,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">바람 따라 만나리:김호중의 계절</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->
                                 </div><!--//5-->
 
-                                <div><!--6-->
+                                <div class="swiper-slide"><!--6-->
                                         <div class="img_contents">
-                                            <img src="img/87358_320.jpg" alt="익스펜더블 4">
+                                            <img src="../img/87358_320.jpg" alt="익스펜더블 4">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age19">19</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -675,14 +677,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">익스펜더블 4</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->                                       
                                 </div><!--//6-->
 
-                                <div><!--7-->
+                                <div class="swiper-slide"><!--7-->
                                         <div class="img_contents">
-                                            <img src="img/87438_320.jpg" alt="오픈 더 도어">
+                                            <img src="../img/87438_320.jpg" alt="오픈 더 도어">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age19">19</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -693,14 +695,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">오픈 더 도어</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->     
                                 </div><!--//7-->
 
-                                <div><!--8-->
+                                <div class="swiper-slide"><!--8-->
                                         <div class="img_contents">
-                                            <img src="img/87298_320.jpg" alt="블루 자이언트">
+                                            <img src="../img/87298_320.jpg" alt="블루 자이언트">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -711,15 +713,15 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">블루 자이언트</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->     
 
                                 </div><!--//8-->
 
-                                <div><!--9-->
+                                <div class="swiper-slide"><!--9-->
                                         <div class="img_contents">
-                                            <img src="img/87408_320.jpg" alt="화란">
+                                            <img src="../img/87408_320.jpg" alt="화란">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age15">15</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -730,14 +732,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">화란</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->     
                                 </div><!--//9-->
 
-                                <div><!--10-->
+                                <div class="swiper-slide"><!--10-->
                                         <div class="img_contents">
-                                            <img src="img/87428_320.jpg" alt="엑소시스트-믿는 자">
+                                            <img src="../img/87428_320.jpg" alt="엑소시스트-믿는 자">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age15">15</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -748,14 +750,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">엑소시스트-믿는 자</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->   
                                 </div><!--//10-->
 
-                                <div><!--11-->
+                                <div class="swiper-slide"><!--11-->
                                         <div class="img_contents">
-                                            <img src="img/87263_320.jpg" alt="마브카-숲의 노래">
+                                            <img src="../img/87263_320.jpg" alt="마브카-숲의 노래">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon ageAll">All</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -766,14 +768,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">엑소시스트-믿는 자</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->   
                                 </div><!--//11-->
 
-                                <div><!--12-->
+                                <div class="swiper-slide"><!--12-->
                                         <div class="img_contents">
-                                            <img src="img/87360_320.jpg" alt="퍼피 구조대-더 마이티 무비">
+                                            <img src="../img/87360_320.jpg" alt="퍼피 구조대-더 마이티 무비">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon ageAll">All</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -784,14 +786,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">퍼피 구조대-더 마이티 무비</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->   
                                 </div><!--//12-->
 
-                                <div><!--13-->
+                                <div class="swiper-slide"><!--13-->
                                         <div class="img_contents">
-                                            <img src="img/87305_320.jpg" alt="화사한 그녀">
+                                            <img src="../img/87305_320.jpg" alt="화사한 그녀">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -802,14 +804,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">화사한 그녀</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//13-->
 
-                                <div><!--14-->
+                                <div class="swiper-slide"><!--14-->
                                         <div class="img_contents">
-                                            <img src="img/87355_320.jpg" alt="사나-저주의 아이">
+                                            <img src="../img/87355_320.jpg" alt="사나-저주의 아이">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age15">15</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -820,14 +822,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">사나-저주의 아이</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//14-->
 
-                                <div><!--15-->
+                                <div class="swiper-slide"><!--15-->
                                         <div class="img_contents">
-                                            <img src="img/87405_320.jpg" alt="믿을 수 있는 사람">
+                                            <img src="../img/87405_320.jpg" alt="믿을 수 있는 사람">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -838,14 +840,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">믿을 수 있는 사람</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//15-->
 
-                                <div><!--16-->
+                                <div class="swiper-slide"><!--16-->
                                         <div class="img_contents">
-                                            <img src="img/87500_320.jpg" alt="팀 버튼의 크리스마스 악몽">
+                                            <img src="../img/87500_320.jpg" alt="팀 버튼의 크리스마스 악몽">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon ageAll">All</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -856,14 +858,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">팀 버튼의 크리스마스 악몽</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//16-->
 
-                                <div><!--17-->
+                                <div class="swiper-slide"><!--17-->
                                         <div class="img_contents">
-                                            <img src="img/87335_320.jpg" alt="천박사 퇴마 연구소-설경의 비밀">
+                                            <img src="../img/87335_320.jpg" alt="천박사 퇴마 연구소-설경의 비밀">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -874,14 +876,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">천박사 퇴마 연구소-설경의 비밀</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//17-->
 
-                                <div><!--18-->
+                                <div class="swiper-slide"><!--18-->
                                         <div class="img_contents">
-                                            <img src="img/85672_320.jpg" alt="라라랜드">
+                                            <img src="../img/85672_320.jpg" alt="라라랜드">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -892,14 +894,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">라라랜드</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//18-->
 
-                                <div> <!--19-->
+                                <div class="swiper-slide"> <!--19-->
                                         <div class="img_contents">
-                                            <img src="img/87388_320.jpg" alt="1947 보스톤">
+                                            <img src="../img/87388_320.jpg" alt="1947 보스톤">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -910,14 +912,14 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">1947 보스톤</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//19-->
 
-                                <div><!--20-->
+                                <div class="swiper-slide"><!--20-->
                                         <div class="img_contents">
-                                            <img src="img/87440_320.jpg" alt="우리의 하루">
+                                            <img src="../img/87440_320.jpg" alt="우리의 하루">
                                             <div class="img_rank"> <!--영화등급-->
                                                 <i class="icon age12">12</i><!--아이콘-->
                                             </div><!--//img_rank-->
@@ -928,141 +930,163 @@
                                         </div><!--//img_contents-->
                                         <div class="movie_info"><!--영화 설명-->
                                             <strong class="movieName">우리의 하루</strong>
-                                            <span><img src="img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
+                                            <span><img src="../img/eggGoldeneggPreegg.png" alt="Golden Egg">?</span>
                                             <span>예매율 0.0%</span>
                                         </div><!--//movie_info-->  
                                 </div><!--//20-->
-                            </div><!--//slider img_slider2-->         
-                     <!--   </div>--> <!--//movie_list container-->
+                            </div>                               
+                        </div><!--//swiper img_slider2--> 
+                        <div class="img2 swiper-button-next"></div>
+                        <div class="img2 swiper-button-prev"></div>     
+                    </div><!--//slider-->
+                         
+              
 
-                    </div><!--//movie_list-->
-                </div><!--//container-->
-            </div><!--//chart-->
+                </div><!--//movie_list-->
+               
+            </div><!--//container-->
+        </div><!--//chart-->
 
-            <div class="event_wrap">
-                <div class="container">
-                    <div class="event_title">
-                        <span>EVENT</span>
-                        <a href="#" class="playStop">play stop</a>
-                        <a href="#" class="allView">전체보기</a>                       
-                    </div><!--//event_title-->
+        <div class="event_wrap">
+            <div class="container">
+                <div class="event_title">
+                    <span>EVENT</span>
+                    <a href="#" class="playStop">play stop</a>
+                    <a href="#" class="allView">전체보기</a>                       
+                </div><!--//event_title-->
 
-                    <div class="event_silder">
-                        <div class="slick_event">
-                            <div class="slickAutoplay">
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="img/16975185251970.jpg" alt="MOINTS X PRISM O">
-                                    </div><!--//img_wrap-->
-                                    <strong>MOINTS X PRISM OF</strong>
-                                    <span>2023.10.17~2023.11.23</span>
-                                </a>
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="img/16981333959980.jpg" alt="[바비]IMAX 포스터">
-                                    </div><!--//img_wrap-->
-                                    <strong>[바비]IMAX 포스터</strong>
-                                    <span>2023.10.20~2023.11.07</span>
-                                </a>
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="img/16980503360220.jpg" alt="[조커]IMAX 포스터">
-                                    </div><!--//img_wrap-->
-                                    <strong>[조커]IMAX 포스터</strong>
-                                    <span>2023.10.24~2023.11.07</span>
-                                </a>
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="img/16951155431780.jpg" alt="춘식이와 CGV의 만남! 귀엽구마, 춘식이!">
-                                    </div><!--//img_wrap-->
-                                    <strong>춘식이와 CGV의 만남! 귀엽구마, 춘식이!</strong>
-                                    <span>2023.9.19~2023.12.31</span>
-                                </a>
-                                <a href="#">
-                                    <div class="img_wrap">
-                                        <img src="img/16951156319920.jpg" alt="춘식이와 CGV의 만남! 맛있구마, 춘식이!">
-                                    </div><!--//img_wrap-->
-                                    <strong>춘식이와 CGV의 만남! 맛있구마, 춘식이!</strong>
-                                    <span>2023.9.19~2023.12.31</span>
-                                </a>
+                <div class="event_silder">                     
+                    <div class="swiper event_slider">
+                        <div class="swiper-wrapper">
 
-                            </div><!--//slickAutoplay-->                           
-                        </div><!--//slick_event-->                       
-                    </div><!--//event_silder-->
-                </div><!--//container-->
+                          <div class="swiper-slide eventSwiper">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../img/16975185251970.jpg" alt="MOINTS X PRISM O">
+                                </div><!--//img_wrap-->
+                                <strong>MOINTS X PRISM OF</strong>
+                                <span>2023.10.17~2023.11.23</span>
+                            </a>
+                          </div>
 
-            </div><!--//event_wrap-->
+                          <div class="swiper-slide eventSwiper">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../img/16981333959980.jpg" alt="[바비]IMAX 포스터">
+                                </div><!--//img_wrap-->
+                                <strong>[바비]IMAX 포스터</strong>
+                                <span>2023.10.20~2023.11.07</span>
+                            </a>
+                          </div>
 
-            <!-- 특별관 -->
-            <div class="specialHall">
-                <div class="contents">
-                    <div class="specialHall_title">
-                        <span>특별관</span>
-                        <a href="#" class="allView">전체보기</a>
-                    </div><!--//specialHall_title-->
+                          <div class="swiper-slide eventSwiper">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../img/16980503360220.jpg" alt="[조커]IMAX 포스터">
+                                </div><!--//img_wrap-->
+                                <strong>[조커]IMAX 포스터</strong>
+                                <span>2023.10.24~2023.11.07</span>
+                            </a>
+                          </div>
 
-                    <div class="specialHall_content">
-                        <a href="#"><!--사진-->
-                            <div class="event_img">
-                                <img src="img/16390080561620.png" alt="SUITE CINEMA" class="img active">
-                                <img src="img/16553622935690.png" alt="CINE & LIVINGROOM" class="img">
-                                <img src="img/16382612660240.png" alt="4DX" class="img">
-                                <img src="img/16382612660560.png" alt="CINE de CHEF" class="img">
+                          <div class="swiper-slide eventSwiper">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../img/16951155431780.jpg" alt="춘식이와 CGV의 만남! 귀엽구마, 춘식이!">
+                                </div><!--//img_wrap-->
+                                <strong>춘식이와 CGV의 만남! 귀엽구마, 춘식이!</strong>
+                                <span>2023.9.19~2023.12.31</span>
+                            </a>
+                          </div>
 
-                            </div><!--//event_img-->
-                        </a>
+                          <div class="swiper-slide eventSwiper">
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../img/16951156319920.jpg" alt="춘식이와 CGV의 만남! 맛있구마, 춘식이!">
+                                </div><!--//img_wrap-->
+                                <strong>춘식이와 CGV의 만남! 맛있구마, 춘식이!</strong>
+                                <span>2023.9.19~2023.12.31</span>
+                            </a>
+                          </div>                    
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--//event_silder-->
+            </div><!--//container-->
 
-                        <ul class="specialHall_list"><!--설명-->
-                            <li class="active">
-                                <a href="#">
-                                    <strong>SUITE CINEMA</strong>
-                                    <div>
-                                        <span class="hall_tag">#호텔 컨셉의 프리미엄관</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <strong>CINE & LIVINGROOM</strong>
-                                    <div>
-                                        <span class="hall_tag">#신개념 소셜 상영관</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <strong>4DX</strong>
-                                    <div>
-                                        <span class="hall_tag">#모션시트 #오감체험</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <strong>CINE de CHEF</strong>
-                                    <div>
-                                        <span class="hall_tag">#쉐프가 있는 영화관</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!--//specialHall_content-->
+        </div><!--//event_wrap-->
 
-                  
+        <!-- 특별관 -->
+        <div class="specialHall">
+            <div class="contents">
+                <div class="specialHall_title">
+                    <span>특별관</span>
+                    <a href="#" class="allView">전체보기</a>
+                </div><!--//specialHall_title-->
 
-                </div><!--//contents-->
-            </div><!--//specialHall-->
+                <div class="specialHall_content">
+                    <a href="#"><!--사진-->
+                        <div class="event_img">
+                            <img src="img/16390080561620.png" alt="SUITE CINEMA" class="img active">
+                            <img src="img/16553622935690.png" alt="CINE & LIVINGROOM" class="img">
+                            <img src="img/16382612660240.png" alt="4DX" class="img">
+                            <img src="img/16382612660560.png" alt="CINE de CHEF" class="img">
 
-            <!--패키지 리스트-->
-            <div class="package_list">
-                <div class="contents">
-                    <div class="package_icon">
-                        <div class="package">
-                            <i class="packageName"> <!--패키지-->
-                                패키지
-                                <a href="/">더보기</a>
-                            </i>
-                            <i>
+                        </div><!--//event_img-->
+                    </a>
+
+                    <ul class="specialHall_list"><!--설명-->
+                        <li class="active">
+                            <a href="#">
+                                <strong>SUITE CINEMA</strong>
+                                <div>
+                                    <span class="hall_tag">#호텔 컨셉의 프리미엄관</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>CINE & LIVINGROOM</strong>
+                                <div>
+                                    <span class="hall_tag">#신개념 소셜 상영관</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>4DX</strong>
+                                <div>
+                                    <span class="hall_tag">#모션시트 #오감체험</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>CINE de CHEF</strong>
+                                <div>
+                                    <span class="hall_tag">#쉐프가 있는 영화관</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--//specialHall_content-->
+
+              
+
+            </div><!--//contents-->
+        </div><!--//specialHall-->
+
+        <!--패키지 리스트-->
+        <div class="package_list">
+            <div class="contents">
+                <div class="package_icon">
+                    <div class="package">
+                        <i class="packageName"> <!--패키지-->
+                            패키지
+                            <a href="/">더보기</a>
+                        </i>
+                        <div> <!-- pack_box-->
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/16778218049340.jpg" alt="we_package">
@@ -1073,7 +1097,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/16778214176450.jpg" alt="you_and_me_package">
@@ -1084,7 +1108,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/16778206767040.jpg" alt="goodDay_package">
@@ -1095,14 +1119,17 @@
                                     </div>
                                 </a>
                             </i>
-                        </div><!--//package-->
+                        </div>
+                        
+                    </div><!--//package-->
 
-                        <div class="package">
-                            <i class="packageName"><!--영화관람권-->
-                                영화관람권
-                                <a href="#">더보기</a>
-                            </i>
-                            <i>
+                    <div class="package">
+                        <i class="packageName"><!--영화관람권-->
+                            영화관람권
+                            <a href="#">더보기</a>
+                        </i>
+                        <div><!-- pack_box-->
+                            <i class="pack_box">
                                 <a href="#">
                                     <div class="packege_img">
                                         <img src="img/15458911951520.jpg" alt="gold_class">
@@ -1113,7 +1140,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/16777513183750.jpg" alt="movie_ticket">
@@ -1124,7 +1151,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/16105061088530.jpg" alt="4dx_ticket">
@@ -1136,14 +1163,17 @@
                                 </a>
                             </i>
 
-                        </div><!--//package-->
-                        
-                        <div class="package">
-                            <i class="packageName"> <!--기프트카드-->
-                                기프트카드
-                                <a href="/">더보기</a>
-                            </i>
-                            <i>
+                        </div>
+                       
+                    </div><!--//package-->
+                    
+                    <div class="package">
+                        <i class="packageName"> <!--기프트카드-->
+                            기프트카드
+                            <a href="/">더보기</a>
+                        </i>
+                        <div> <!-- pack_box-->
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/15940283913270.jpg" alt="panico">
@@ -1154,7 +1184,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/15936788537310.jpg" alt="panico">
@@ -1165,7 +1195,7 @@
                                     </div>
                                 </a>
                             </i>
-                            <i>
+                            <i class="pack_box">
                                 <a href="/">
                                     <div class="packege_img">
                                         <img src="img/15814124358590.jpg" alt="panico">
@@ -1176,69 +1206,73 @@
                                     </div>
                                 </a>
                             </i>
-                        </div><!--//package-->
+                        </div>
+                       
+                    </div><!--//package-->
 
-                    </div><!--//package_icon-->
-                </div><!--//contents-->
-            </div><!--//package_list"-->
-
-
-            <!--고객센터-->
-            <div class="client_center">
-                <div class="contents">
-                    <div class="client_box">
-
-                        <div class="clicent_center">
-                            <div class="notice">
-                                <strong>공지사항</strong>
-                                <a href="#" class="notice_center">[극장]CGV 씨네샵 천안터미널점 운영 종료 안내</a>
-                                <a href="#" class="more">더보기</a>
-                            </div><!--//notice-->
-                            <div class="number"><!--고객센터-->
-                                <div class="number_wrap">
-                                    <strong>고객센터</strong>                           
-                                </div><!--//number_wrap-->
-                                <div class="number_time">   
-                                    <strong>1544-1122</strong>
-                                    <span>고객센터 운영시간 (평일 09:00~18:00)</span>
-                                    <span>업무시간 외 자동응답 안내 가능합니다</span>
-                                </div>  <!--//number_time-->    
-                            </div><!--//number-->
-
-                            <div class="number_answer">
-                                <a href="#">FAQ</a>
-                                <a href="#">1:1 문의</a>
-                                <a href="#">대관/단체 문의</a>
-
-                            </div><!--//number_answer-->
-                        </div><!--//clicent_center-->
-
-                        <div class="app_downlode">
-                            <strong>앱 다운로드</strong>
-                            <span>CGV앱에서 더 편리하게 이용하세요</span>
-                            <div class="app_img">
-                                <img src="img/img_qrcode.gif" alt="qrcode">
-                            </div>
-                            <div class="app_contents">
-                                <span>QR코드를 스캔하고</span>
-                                <span>앱설치 페이지로 바로 이동하세요</span>
-                            </div>                        
-                        </div><!--//app_downlode-->
-
-                    </div><!--//client_box-->
-                </div><!--//contents-->
-            </div><!--//client_center-->
+                </div><!--//package_icon-->
+            </div><!--//contents-->
+        </div><!--//package_list"-->
 
 
-            <!-- 고정 버튼 -->
-            <div class="fix_button">
-                <a href="#" class="fixTicket">예매하기</a>
-                <a href="#" class="gotoTop">
-                    <img src="img/gotoTop.png" alt="goTop">
-                </a>
-            </div><!--//fix_button-->
+        <!--고객센터-->
+        <div class="client_center">
+            <div class="contents">
+                <div class="client_box">
 
-        </section>
+                    <div class="clicent_center">
+                        <div class="notice">
+                            <strong>공지사항</strong>
+                            <a href="#" class="notice_center">[극장]CGV 씨네샵 천안터미널점 운영 종료 안내</a>
+                            <a href="#" class="more">더보기</a>
+                        </div><!--//notice-->
+                        <div class="number"><!--고객센터-->
+                            <div class="number_wrap">
+                                <strong>고객센터</strong>                           
+                            </div><!--//number_wrap-->
+                            <div class="number_time">   
+                                <strong>1544-1122</strong>
+                                <span>고객센터 운영시간 (평일 09:00~18:00)</span>
+                                <span>업무시간 외 자동응답 안내 가능합니다</span>
+                            </div>  <!--//number_time-->    
+                        </div><!--//number-->
+
+                        <div class="number_answer">
+                            <a href="#">FAQ</a>
+                            <a href="#">1:1 문의</a>
+                            <a href="#">대관/단체 문의</a>
+
+                        </div><!--//number_answer-->
+                    </div><!--//clicent_center-->
+
+                    <div class="app_downlode">
+                        <strong>앱 다운로드</strong>
+                        <span>CGV앱에서 더 편리하게 이용하세요</span>
+                        <div class="app_img">
+                            <img src="img/img_qrcode.gif" alt="qrcode">
+                        </div>
+                        <div class="app_contents">
+                            <span>QR코드를 스캔하고</span>
+                            <span>앱설치 페이지로 바로 이동하세요</span>
+                        </div>                        
+                    </div><!--//app_downlode-->
+
+                </div><!--//client_box-->
+            </div><!--//contents-->
+        </div><!--//client_center-->
+
+
+
+        <!-- 고정 버튼 -->
+        <div class="fix_button">
+            <a href="#" class="fixTicket">예매하기</a>
+            <a href="#" class="gotoTop">
+                <img src="img/gotoTop.png" alt="goTop">
+            </a>
+        </div><!--//fix_button-->
+
+    </section>
+
 
 
         <footer id="footer">
@@ -1314,17 +1348,53 @@
                 </div><!--//company_select-->
             </div><!--//company-->
 
+            <div class="mfooter_list">
+                <div class="m_company">
+                    <span>CJ CGV(주)</span>
+                    <ul class="m_wrap">
+                        <li>대표이사</li>
+                        <li>허민회</li>
+                    </ul><!--//m_wrap-->
+                    <ul class="m_wrap">
+                        <li>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</li>
+                    </ul >    
+                    <ul class="m_wrap">
+                        <li>통신판매업신고번호</li>
+                        <li>2017-서울용산-0662</li>
+                        <li>사업자정보확인</li>
+                    </ul><!--//m_wrap-->
+                    <ul class="m_wrap">
+                        <li>사업자등록번호</li>
+                        <li>104-81-45690</li>
+                    </ul><!--//m_wrap-->
+                    <ul class="m_wrap">
+                        <li>개인정보보호 책임자</li>
+                        <li>도형구</li>
+                        <li>호스팅사업자</li>
+                        <li>CJ올리브네트웍스</li>
+                    </ul><!--//m_wrap-->
+                    <ul class="m_wrap">
+                        <li>대표이메일</li>
+                        <li>cjcgvmaster@cj.net</li>
+                        <li>고객센터</li>
+                        <li>1544-1122</li>
+                    </ul><!--//m_wrap-->
+                </div><!--//m_company-->
+
+                <div class="m_company2">
+                    <ul>
+                        <li>이용약관</li>
+                        <li>개인정보 처리방침</li>
+                        <li>위치기반서비스 이용약관</li>
+                        <li>법적고지</li>
+                    </ul>
+                </div><!--//m_company-->
+            </div><!--//mfooter_list-->
           
         </footer>
     
         
-
-
-        <!--제이쿼리 충돌 방지 코드-->
-        <script type="text/javascript">
-            $.noConflict();
-        </script>
-
-
+      
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
